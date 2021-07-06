@@ -1,14 +1,16 @@
 print "En quelle année es-tu né(e) ?\n> "
-year = gets.chomp
-i = year.to_i
-if year.length.zero?
-  print "Et ton année de naissance ?\n"
-else if i == Time.new.year
-  print "Tu es trop jeune !\n"
-else
-  while i <= Time.new.year
-    puts i
-    i += 1
-  end
+year = gets.chomp.to_i
+
+if year.zero?
+  abort("Et ton année de naissance ?\n")
+
+else if year == Time.new.year
+  abort("Tu es trop jeune !\n")
+
 end
+end
+
+while year <= Time.new.year
+  puts year
+  year += 1
 end

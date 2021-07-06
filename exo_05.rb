@@ -1,5 +1,12 @@
-puts "Ça farte combien de fois ?"
-fartes = gets.chomp
-fartes.to_i.times do
+print "Ça farte combien de fois ?\n> "
+
+fartes = gets.chomp.to_i
+
+if fartes.zero?
+  abort("Entrez un nombre supérieur à 0")
+end
+
+
+fartes.times do
   puts("Ça farte ?")
 end

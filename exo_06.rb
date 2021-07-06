@@ -1,5 +1,11 @@
-puts "Bonjour combien de fois ?"
-fartes = gets.chomp
-(fartes.to_i - 1).times do
+print "Bonjour combien de fois ?\n> "
+
+fartes = gets.chomp.to_i
+
+if fartes.zero?
+  abort("Entrez un nombre supérieur à 0")
+end
+
+(fartes - 1).times do
   puts("Bonjour toi !")
 end

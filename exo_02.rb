@@ -1,7 +1,8 @@
 print "Quel est ton nom ?\n> "
 user = gets.chomp
+
 if user.length.zero?
-  print "Et le nom ?\n"
-else
-  print "Bonjour, #{user} !\n"
+  abort("Entrez un nombre supérieur à 0")
 end
+
+print "Bonjour, #{user} !\n"
