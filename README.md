@@ -11,8 +11,15 @@ votre *package manager*, et les lancer avec `elixir exo_xx.exs`.
 Pour compiler les programes en C, vous avec deux choix:
 
 ```
-$ cc -o exo_xx exo_xx.c
+; cc -o exo_xx exo_xx.c
 
-$ make exo_xx
+; make exo_xx
 ```
 
+Et pour les lancer
+
+```
+; ./exo_xx
+```
+
+Les adaptations en C et en Elixir sont en progrès.
