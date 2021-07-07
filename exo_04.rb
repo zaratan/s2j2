@@ -6,4 +6,4 @@ if year.zero?
 end
 
 delta = year + 100
-print "Tu auras 100 ans en #{delta} !\n
+print "Tu auras 100 ans en #{delta} !\n"
