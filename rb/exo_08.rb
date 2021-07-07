@@ -5,7 +5,6 @@ numb = gets.chomp.to_i
 
 abort('Entrez un nombre supérieur à 0') if numb.zero?
 
-while numb >= 0
-  puts numb
-  numb -= 1
+numb.downto(0) do |i|
+  puts i
 end

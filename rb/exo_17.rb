@@ -5,16 +5,7 @@ numb = gets.to_i
 i = 1
 
 abort('Ça fait beaucoup !') if numb > 25
-while i <= numb
-  (numb - i).times do |_n|
-    print(' ')
-  end
-  i.times do |_i|
-    print('#')
-  end
-  (i - 1).times do |_i|
-    print('#')
-  end
-  print("\n")
-  i += 1
+
+numb.times do |i|
+  puts(('#' * (i * 2 + 1)).rjust(numb + i))
 end

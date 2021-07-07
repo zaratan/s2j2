@@ -12,13 +12,11 @@ elsif i == Time.new.year
   abort("Tu es trop jeune !\n")
 end
 
-while i <= Time.new.year
-  if delta == x
-    puts("Il y a #{x} ans, tu avais la moitié de l'âge que tu as aujourd'hui")
+year.upto(Time.now.year).with_index do |current_year, index|
+  delta = Time.now.year - current_year
+  if delta == index
+    puts("Il y a #{delta} ans, tu avais la moitié de l'âge que tu as aujourd'hui")
   else
-    puts("Il y a #{delta} ans, tu avais #{x} ans")
+    puts("Il y a #{delta} ans, tu avais #{index} ans")
   end
-  i += 1
-  x += 1
-  delta -= 1
 end
