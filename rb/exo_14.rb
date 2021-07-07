@@ -6,15 +6,6 @@ i = 0
 
 abort('Ça fait beaucoup trop !') if numb.to_i > 50
 
-LIST = []
-
-while i <= numb.to_i
-  email = if i < 10
-            "jean.dupont.0#{i}@email.fr"
-          else
-            "jean.dupont.#{i}@email.fr"
-          end
-  puts(email).freeze if i.even?
-  LIST.push(email)
-  i += 1
-end
+Array.new(numb.to_i / 2) do |i|
+  "jean.dupont.#{((i + 1)*2).to_s.rjust(2, '0')}@email.fr"
+end.each{|email| puts email }

@@ -11,7 +11,6 @@ elsif year == Time.new.year
 
 end
 
-while year <= Time.new.year
-  puts year
-  year += 1
+year.upto(Time.now.year) do |i|
+  puts i
 end

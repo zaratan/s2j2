@@ -3,6 +3,6 @@
 print "Quel est ton nom ?\n> "
 user = gets.chomp
 
-abort('Entrez un nombre supérieur à 0') if user.length.zero?
+abort('Entrez un nom complet') if user.length.zero?
 
 print "Bonjour, #{user} !\n"
