@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "dist",
+    "target": "es2015",
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "downlevelIteration": true,
+    "preserveWatchOutput": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true
+  },
+  "include": ["exo/exo.ts"],
+  "exclude": ["node_modules"]
+}
