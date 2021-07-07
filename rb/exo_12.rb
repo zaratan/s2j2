@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 print "En quelle année es-tu né(e) ?\n> "
 year = gets.chomp.to_i
 i = year
@@ -6,9 +8,8 @@ delta = Time.new.year - i
 if year.zero?
   abort("Et ton année de naissance ?\n")
 
-else if i == Time.new.year
+elsif i == Time.new.year
   abort("Tu es trop jeune !\n")
-end
 end
 
 while i <= Time.new.year
@@ -21,4 +22,3 @@ while i <= Time.new.year
   x += 1
   delta -= 1
 end
-

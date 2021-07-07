@@ -1,12 +1,11 @@
+# frozen_string_literal: true
+
 print "Ça farte combien de fois ?\n> "
 
 fartes = gets.chomp.to_i
 
-if fartes.zero?
-  abort("Entrez un nombre supérieur à 0")
-end
-
+abort('Entrez un nombre supérieur à 0') if fartes.zero?
 
 fartes.times do
-  puts("Ça farte ?")
+  puts('Ça farte ?')
 end

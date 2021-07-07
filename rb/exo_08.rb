@@ -1,9 +1,9 @@
+# frozen_string_literal: true
+
 print "On compte à rebours à partir de quand ?\n> "
 numb = gets.chomp.to_i
 
-if numb.zero?
-  abort("Entrez un nombre supérieur à 0")
-end
+abort('Entrez un nombre supérieur à 0') if numb.zero?
 
 while numb >= 0
   puts numb

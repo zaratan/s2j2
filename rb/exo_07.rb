@@ -1,10 +1,10 @@
+# frozen_string_literal: true
+
 print "On compte jusqu'à combien ?\n> "
 
 numb = gets.chomp.to_i
-if numb.zero?
-  abort("Entrez un nombre supérieur à 0")
-end
+abort('Entrez un nombre supérieur à 0') if numb.zero?
 
-numb.times do |numb|
-  puts numb + 1
+numb.times do |n|
+  puts n + 1
 end

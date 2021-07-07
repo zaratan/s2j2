@@ -1,8 +1,8 @@
+# frozen_string_literal: true
+
 print "Quel est ton nom ?\n> "
 user = gets.chomp
 
-if user.length.zero?
-  abort("Entrez un nombre supérieur à 0")
-end
+abort('Entrez un nombre supérieur à 0') if user.length.zero?
 
 print "Bonjour, #{user} !\n"
