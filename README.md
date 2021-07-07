@@ -1,9 +1,9 @@
 # THP: S2J2
 
 Exercices du deuxième jour de le seconde semaine the The Hacking Project en
-ruby, elixir, et C99. C'est le minimum pour que ça marche en surface, on devrait
-ajouter plus de précision au niveau des *types* et rajouter des conditions
-supplémentaires.
+ruby, elixir, C99 et TypeScript. C'est le minimum pour que ça marche en surface,
+on devrait ajouter plus de précision au niveau des *types* et rajouter des
+conditions supplémentaires.
 
 Pour faire tourner les scripts elixir, il faut installer elixir et erlang avec
 votre *package manager*, et les lancer avec `elixir exo_xx.exs`.
