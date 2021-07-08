@@ -6,6 +6,4 @@ fartes = gets.chomp.to_i
 
 abort('Entrez un nombre supérieur à 0') if fartes.zero?
 
-fartes.times do
-  puts('Ça farte ?')
-end
+fartes.times { puts('Ça farte ?') }
