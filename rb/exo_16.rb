@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-print("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?\n> ")
+print(
+  "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?\n> "
+)
 numb = gets.to_i
 i = 1
 
 abort('Ça fait beaucoup !') if numb > 25
 
-numb.times do |i|
-  puts ('#' * (i + 1)).rjust(numb)
-end
+numb.times { |i| puts ('#' * (i + 1)).rjust(numb) }
