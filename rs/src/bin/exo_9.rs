@@ -1,5 +1,5 @@
-use std::io;
 use chrono::prelude::*;
+use std::io;
 
 fn main() {
     println!("En quelle année es-tu né(e) ?");
@@ -8,7 +8,7 @@ fn main() {
     io::stdin().read_line(&mut birth_buf).unwrap();
 
     let current_year = Utc::today().year();
-    let birth_year = birth_buf.trim().parse::<i32>().unwrap(); 
+    let birth_year = birth_buf.trim().parse::<i32>().unwrap();
 
     if birth_year >= current_year {
         panic!("Tu ne peux pas être aussi jeune ?")
