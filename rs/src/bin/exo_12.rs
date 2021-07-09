@@ -15,6 +15,15 @@ fn main() {
     }
 
     for i in birth_year..=current_year {
-        println!("{}", i - birth_year)
+        let delta = current_year - i;
+        let age = i - birth_year;
+        if (age == delta) {
+            println!(
+                "Il y a {} ans, tu avais la moitié de l'age que tu as aujourd'hui.",
+                delta
+            )
+        } else {
+            println!("Il y a {} ans, tu avais {} ans.", delta, age)
+        }
     }
 }

@@ -1,5 +1,5 @@
-use std::io;
 use chrono::prelude::*;
+use std::io;
 
 fn main() {
     println!("Quel est ton age ?");
@@ -8,7 +8,7 @@ fn main() {
     io::stdin().read_line(&mut age_buf).unwrap();
 
     let current_year = Utc::today().year();
-    let age = age_buf.trim().parse::<i32>().unwrap(); 
+    let age = age_buf.trim().parse::<i32>().unwrap();
     let prev_age = age + 2017 - current_year;
 
     if age <= 0 || prev_age <= 0 {

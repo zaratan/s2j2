@@ -15,6 +15,10 @@ fn main() {
     }
 
     for i in birth_year..=current_year {
-        println!("{}", i - birth_year)
+        println!(
+            "Il y a {} ans, tu avais {} ans.",
+            current_year - i,
+            i - birth_year
+        )
     }
 }
